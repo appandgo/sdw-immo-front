@@ -1,2 +1,5 @@
 # sdw-immo-front
-Sdw immo Front
+
+npm install
+
+Ouvrir index.html
