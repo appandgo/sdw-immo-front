@@ -1,0 +1,29 @@
+{
+  "name": "sdw-immo-front",
+  "version": "1.0.0",
+  "description": "Sdw immo Front",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mopiou/sdw-immo-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mopiou/sdw-immo-front/issues"
+  },
+  "homepage": "https://github.com/mopiou/sdw-immo-front#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
