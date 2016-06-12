@@ -1,7 +1,9 @@
 (function() {
   'use strict';
 
-  console.log('test');
+  function loginSerivce() {
+      console.log('test');
+  }
   
   angular.module('services.login', [])
     .factory('loginService', loginService);

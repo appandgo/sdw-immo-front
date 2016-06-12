@@ -23,8 +23,12 @@ module.run(["$templateCache", function($templateCache) {
     "  <ul>\n" +
     "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.home\">{{ 'home' | uppercase }}</a>\n" +
     "    </li>\n" +
+    "    <li ui-sref-active=\"pure-menu-selected\"><a>Acheter</a>\n" +
+    "    </li>														\n" +
+    "    													<!-- Gérer achat / location directement ici -->\n" +
+    "    <li ui-sref-active=\"pure-menu-selected\"><a>Louer</a>\n" +
     "    </li>\n" +
-    "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.login\">{{ 'login' | uppercase }}</a>\n" +
+    "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.loginCrtl\">{{ 'login' | uppercase }}</a>\n" +
     "    </li>\n" +
     "  </ul>\n" +
     "</div>\n" +
@@ -243,8 +247,8 @@ module.run(["$templateCache", function($templateCache) {
   $templateCache.put("src/app/login/login.tpl.html",
     "<div ng-controller=\"ExampleController\">\n" +
     "  <form novalidate class=\"simple-form\">\n" +
-    "    Mail : <input type=\"text\" ng-model=\"user.name\" /><br />\n" +
-    "    Mot de passe : <input type=\"email\" ng-model=\"user.email\" /><br />\n" +
+    "    Mail (test): <input type=\"text\" ng-model=\"user.name\" /><br />\n" +
+    "    Mot de passe (test): <input type=\"email\" ng-model=\"user.email\" /><br />\n" +
     "    <input type=\"submit\" ng-click=\"update(user)\" value=\"Save\" />\n" +
     "  </form>\n" +
     "</div>");

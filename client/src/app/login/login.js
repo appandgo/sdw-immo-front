@@ -1,26 +1,38 @@
 (function() {
   'use strict';
 
-  function loginCrtl(data) {
-    return {
-      restrict: 'EA',
-      replace: 'true',
-      templateUrl: './src/app/login/login.tpl.html',
-        scope: {},
-        controllerAs: 'vm',
-        bindToController: true,
-        controller: function($log, $timeout)  {
-          console.log('It works !');
-          var vm = this;
-            $timeout(function() {
-                $('.modal-trigger').leanModal();
-            }, 1000);
-        },
-        link: function(scope, elm, attrs) {
+  /**
+   * @name  config
+   * @description config block
+   */
+  function config($stateProvider) {
+    $stateProvider
+      .state('root.loginCrtl', {
+        url: '/',
+        views: {
+          '@': {
+            templateUrl: 'src/app/login/login.tpl.html',
+            controller: 'HomeCtrl as home',
+            resolve: {
+              data: function(DataService) {
+                return DataService.get();
+              }
+            }
+          }
         }
-    };
+      });
   }
 
-  angular.module('loginCrtlDirective', ['services.login'])
-      .directive('loginCrtlDirective', loginCrtl);
+  /**
+   * @name  loginCrtl
+   * @description Controller
+   */
+  function loginCrtl(data) {
+    var home = this;
+    home.data = data.data;
+  }
+
+  angular.module('login', ['services.login'])
+    .config(config)
+    .controller('loginCrtl', loginCrtl);
 })();
