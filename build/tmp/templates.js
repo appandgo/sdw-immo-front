@@ -140,63 +140,24 @@ module.run(["$templateCache", function($templateCache) {
   "use strict";
   $templateCache.put("src/app/home/home.tpl.html",
     "<div class=\"pure-g\">\n" +
-    "  <div class=\"island3 pure-u-1 pure-u-lg-2-3\">\n" +
-    "    <h3>Speed up your <strong>AngularJS</strong> development with a complete and scalable build system that scaffolds the project for you. Just focus on writing code and tests,\n" +
-    "                <code>angular-kickstart</code> will take care of the rest.</h3>\n" +
-    "  </div>\n" +
-    "  <div class=\"island3 pure-u-1 pure-u-lg-1-3\">\n" +
-    "    <a href=\"https://github.com/vesparny/angular-kickstart/releases/latest\" class=\"pure-button button-xlarge button-expanded\">\n" +
-    "        Download\n" +
-    "      </a>\n" +
-    "    <a href=\"https://github.com/vesparny/angular-kickstart/#readme\" target=\"_blank\" class=\"pure-button button-xlarge button-expanded pure-button-primary\">\n" +
-    "        Docs on GitHub\n" +
-    "      </a>\n" +
-    "  </div>\n" +
-    "</div>\n" +
-    "<div class=\"pure-g island\">\n" +
-    "  <ul class=\"hlist pure-u-1\">\n" +
-    "    <li>\n" +
-    "      <iframe class=\"github-btn\" src=\"http://ghbtns.com/github-btn.html?user=vesparny&amp;repo=angular-kickstart&amp;type=watch&amp;count=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"85px\" height=\"20px\"></iframe>\n" +
-    "    </li>\n" +
-    "    <li>\n" +
-    "      <iframe class=\"github-btn\" src=\"http://ghbtns.com/github-btn.html?user=vesparny&amp;repo=angular-kickstart&amp;type=fork&amp;count=true\" allowtransparency=\"true\" frameborder=\"0\" scrolling=\"0\" width=\"85px\" height=\"20px\"></iframe>\n" +
-    "    </li>\n" +
-    "    <li class=\"tweet-btn\">\n" +
-    "      <a class=\"tweet\" href=\"https://twitter.com/intent/tweet?via=vesparny&related=vesparny&text=angular-kickstart - speed up @angularjs development and testing with a great @gulpjs build system. http://bit.ly/angular_kickstart\">Tweet</a>\n" +
-    "    </li>\n" +
-    "  </ul>\n" +
-    "</div>\n" +
     "\n" +
-    "<hr/>\n" +
-    "<div class=\"pure-g island\">\n" +
-    "  <div class=\"pure-u-1 pure-u-lg-1-3 island\">\n" +
-    "    <div class=\"text-center\">\n" +
-    "      <img class=\"pure-img\" src=\"assets/images/angular-logo.png\">\n" +
+    "<div ng-app=\"app\">\n" +
+    "  <div ng-controller=\"CarouselDemoCtrl\" id=\"slides_control\">\n" +
+    "    <div>\n" +
+    "      <carousel interval=\"myInterval\">\n" +
+    "        <slide ng-repeat=\"slide in slides\" active=\"slide.active\">\n" +
+    "          <img ng-src=\"{{slide.image}}\">\n" +
+    "          <div class=\"carousel-caption\">\n" +
+    "            <h4>Slide {{$index+1}}</h4>\n" +
+    "          </div>\n" +
+    "        </slide>\n" +
+    "      </carousel>\n" +
     "    </div>\n" +
-    "    <h3>AngularJS</h3>\n" +
-    "    <p>The best JavaScript framework out there will power up your awesome app.\n" +
-    "    </p>\n" +
     "  </div>\n" +
-    "\n" +
-    "  <div class=\"pure-u-1 pure-u-lg-1-3 island\">\n" +
-    "    <div class=\"text-center\">\n" +
-    "      <img class=\"pure-img\" src=\"assets/images/gulp-logo.png\">\n" +
-    "    </div>\n" +
-    "    <h3>Gulpjs</h3>\n" +
-    "    <p>A smart and scalable <a href=\"http://gulpjs.com\" target=\"_blank\">gulpjs</a> based build system will take care of your development and testing workflow, as well as the optimization process for production release. <a href ui-sref=\"root.getting-started\">Read more...</a>\n" +
-    "    </p>\n" +
-    "  </div>\n" +
-    "\n" +
-    "  <div class=\"pure-u-1 pure-u-lg-1-3 island\">\n" +
-    "    <div class=\"text-center\">\n" +
-    "      <img class=\"pure-img\" src=\"assets/images/bower-logo.png\">\n" +
-    "    </div>\n" +
-    "    <h3>Bower</h3>\n" +
-    "    <p><a href=\"http://bower.io\" target=\"_blank\">Bower</a> will handle your front-end dependencies.</p>\n" +
-    "  </div>\n" +
-    "\n" +
-    "</div>\n" +
-    "\n" +
+    "</div>  \n" +
+    "<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js\"></script>\n" +
+    "  <script type=\"text/javascript\" src=\"//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js\"></script> \n" +
+    "  \n" +
     "<div class=\"pure-g island\">\n" +
     "  <div class=\"pure-u-1 pure-u-lg-1-3 island\">\n" +
     "    <h4>Sass + SMACSS</h4>\n" +

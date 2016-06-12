@@ -32,7 +32,7 @@
     home.data = data.data;
   }
 
-  angular.module('login', ['services.login'])
+  angular.module('login', ['common.services.login'])
     .config(config)
     .controller('loginCrtl', loginCrtl);
 })();
