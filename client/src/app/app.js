@@ -34,8 +34,23 @@
 
   angular.module('app', [
       'ui.router',
-      'home',
-      'login',
+      // home module
+      'app.services.home',
+      'app.directives.home',
+      'app.routes.home', 
+      // login module
+      'app.services.login',
+      'app.directives.login',
+      'app.routes.login',
+      // rent module
+      'app.services.rent',
+      'app.directives.rent',
+      'app.routes.rent',
+      // sale module
+      'app.services.sale',
+      'app.directives.sale',
+      'app.routes.sale',
+
       'getting-started',
       'common.header',
       'common.footer',
