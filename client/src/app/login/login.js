@@ -37,3 +37,4 @@
     .config(config)
     .controller('loginCrtl', loginCrtl);
 })();
+
