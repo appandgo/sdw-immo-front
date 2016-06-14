@@ -4,11 +4,12 @@
   function loginService() {
     return {
       authentification: function() {
+        return 'cool';
         console.log('test');
       }
     };
   }
 
-  angular.module('services.login', [])
-    .factory('DataService', dataService);
+  angular.module('common.services.login')
+    .factory('loginService', loginService);
 })();

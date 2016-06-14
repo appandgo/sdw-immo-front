@@ -1,10 +1,15 @@
 (function() {
   'use strict';
 
-  function loginSerivce() {
-      console.log('test');
+  function loginService() {
+    return {
+      authentification: function() {
+        return 'cool';
+        console.log('test');
+      }
+    };
   }
-  
-  angular.module('services.login', [])
+
+  angular.module('services.login')
     .factory('loginService', loginService);
 })();

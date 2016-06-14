@@ -5,14 +5,15 @@
    * @name  config
    * @description config block
    */
+   
   function config($stateProvider) {
     $stateProvider
       .state('root.loginCrtl', {
-        url: '/',
+        url: '/login',
         views: {
           '@': {
             templateUrl: 'src/app/login/login.tpl.html',
-            controller: 'HomeCtrl as home',
+            controller: 'loginCrtl as login',
             resolve: {
               data: function(DataService) {
                 return DataService.get();
@@ -32,7 +33,7 @@
     home.data = data.data;
   }
 
-  angular.module('login', ['common.services.login'])
+  angular.module('login', [])
     .config(config)
     .controller('loginCrtl', loginCrtl);
 })();
