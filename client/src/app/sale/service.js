@@ -3,13 +3,12 @@
 
   function saleService() {
     return {
-      sale.data: function() {
-        return 'cool';
-        console.log('test');
+      getSale: function() {
+        alert('coucou');
       }
     };
   }
 
-  angular.module('services.sale')
+  angular.module('services.sale', [])
     .factory('saleService', saleService);
 })();

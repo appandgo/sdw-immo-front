@@ -3,13 +3,12 @@
 
   function rentService() {
     return {
-      rent.data: function() {
-        return 'cool';
-        console.log('test');
+      getRent: function() {
+        alert('coucou');
       }
     };
   }
 
-  angular.module('services.rent')
+  angular.module('services.rent', [])
     .factory('rentService', rentService);
 })();

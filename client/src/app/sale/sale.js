@@ -14,8 +14,8 @@
             templateUrl: 'src/app/sale/sale.tpl.html',
             controller: 'SaleCtrl as sale',
             resolve: {
-              data: function(DataService) {
-                return DataService.get();
+              data: function(saleService) {
+                return saleService.getSale();
               }
             }
           }
@@ -32,7 +32,7 @@
     sale.data = data.data;
   }
 
-  angular.module('sale', [])
+  angular.module('sale', ['services.sale'])
     .config(config)
     .controller('SaleCtrl', SaleCtrl);
 })();

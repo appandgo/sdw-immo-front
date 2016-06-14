@@ -38,6 +38,8 @@
       'login',
       'rent',
       'sale',
+      'services.sale',
+      'services.rent',
       'getting-started',
       'common.header',
       'common.footer',

@@ -14,8 +14,8 @@
             templateUrl: 'src/app/rent/rent.tpl.html',
             controller: 'RentCtrl as rent',
             resolve: {
-              data: function(DataService) {
-                return DataService.get();
+              data: function(RentService) {
+                return RentService.get();
               }
             }
           }
@@ -32,7 +32,7 @@
     rent.data = data.data;
   }
 
-  angular.module('rent', [])
+  angular.module('rent', ['services.rent'])
     .config(config)
     .controller('RentCtrl', RentCtrl);
 })();
