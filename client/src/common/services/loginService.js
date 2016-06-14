@@ -10,6 +10,6 @@
     };
   }
 
-  angular.module('services.login')
+  angular.module('common.services.login')
     .factory('loginService', loginService);
 })();

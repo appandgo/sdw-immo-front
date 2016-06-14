@@ -5,6 +5,7 @@
     return {
       get: function() {
         return ['some', 'data'];
+        console.log('cool');
       }
     };
   }
