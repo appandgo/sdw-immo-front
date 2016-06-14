@@ -32,7 +32,7 @@
     home.data = data.data;
   }
 
-  angular.module('home', ['caroussel.carrousel'])
+  angular.module('home', [])
     .config(config)
     .controller('HomeCtrl', HomeCtrl);
 })();
