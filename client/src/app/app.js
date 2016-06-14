@@ -36,6 +36,8 @@
       'ui.router',
       'home',
       'login',
+      'rent',
+      'sale',
       'getting-started',
       'common.header',
       'common.footer',
