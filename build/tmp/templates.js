@@ -208,8 +208,8 @@ module.run(["$templateCache", function($templateCache) {
   $templateCache.put("src/app/login/login.tpl.html",
     "<div ng-controller=\"ExampleController\">\n" +
     "  <form novalidate class=\"simple-form\">\n" +
-    "    Mail (test): <input type=\"text\" ng-model=\"user.name\" /><br />\n" +
-    "    Mot de passe (test): <input type=\"email\" ng-model=\"user.email\" /><br />\n" +
+    "    Mail : <input type=\"text\" ng-model=\"user.name\" /><br />\n" +
+    "    Mot de passe : <input type=\"email\" ng-model=\"user.email\" /><br />\n" +
     "    <input type=\"submit\" ng-click=\"update(user)\" value=\"Save\" />\n" +
     "  </form>\n" +
     "</div>");
