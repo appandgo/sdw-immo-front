@@ -11,7 +11,11 @@
             bindToController: true,
 
             controller: function($log, rentService) {
-                rentService.getData();
+                var vm = this;
+                rentService.getData().then(function(data) {
+                    console.log(data.data);
+                    vm.rents = data.data;
+                });  
             },
             link: function(scope, elm, attrs){
             }

@@ -11,7 +11,11 @@
             bindToController: true,
 
             controller: function($log, saleService) {
-                saleService.getData();  
+                var vm = this;
+                saleService.getData().then(function(data) {
+                    console.log(data.data);
+                    vm.sales = data.data;
+                });  
             },
             link: function(scope, elm, attrs){
             }
