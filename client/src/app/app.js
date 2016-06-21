@@ -34,12 +34,32 @@
 
   angular.module('app', [
       'ui.router',
-      'home',
-      'login',
-      'rent',
-      'sale',
-      'services.sale',
-      'services.rent',
+      // home module
+      'app.services.home',
+      'app.directives.home',
+      'app.routes.home', 
+      // login module
+      'app.services.login',
+      'app.directives.login',
+      'app.routes.login',
+      // rent module
+      'app.services.rent',
+      'app.directives.rent',
+      'app.routes.rent',
+        // details rent module
+        'app.directives.sale-details',
+        'app.routes.sale-details',
+      // sale module
+      'app.services.sale',
+      'app.directives.sale',
+      'app.routes.sale',
+        // details sale module
+        'app.directives.rent-details',
+        'app.routes.rent-details',
+      // search filters module
+      'filters',
+      'selectFilters',
+      
       'getting-started',
       'common.header',
       'common.footer',

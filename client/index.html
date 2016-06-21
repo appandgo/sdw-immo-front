@@ -18,7 +18,10 @@
   <link rel="stylesheet" type="text/css" href="src/vendor/pure/pure.css" />
   <link rel="stylesheet" type="text/css" href="src/vendor/pure/grids-responsive.css" />
   <link rel="stylesheet" type="text/css" href="tmp/main.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
   <!-- endbuild -->
+
+  <link rel="stylesheet" href="src/app/rent/rent-details/rent-style.css">
 </head>
 
 <body>
@@ -39,16 +42,32 @@
   <script type="text/javascript" src="src/app/app.js"></script>
 
   <script type="text/javascript" src="src/app/getting-started/getting-started.js"></script>
-  <script type="text/javascript" src="src/app/home/home.js"></script>
-  <script type="text/javascript" src="src/app/login/login.js"></script>
-  <script type="text/javascript" src="src/app/sale/sale.js"></script>
-  <script type="text/javascript" src="src/app/rent/rent.js"></script>
-  <script type="text/javascript" src="src/app/sale/service.js"></script>
-  <script type="text/javascript" src="src/app/rent/service.js"></script>
-  
+
+<!-- hom script -->
+  <script type="text/javascript" src="src/app/home/root.js"></script>
+  <script type="text/javascript" src="src/app/home/factory.js"></script>
+  <script type="text/javascript" src="src/app/home/directive.js"></script>
+<!-- login script -->
+  <script type="text/javascript" src="src/app/login/root.js"></script>
+  <script type="text/javascript" src="src/app/login/factory.js"></script>
+  <script type="text/javascript" src="src/app/login/directive.js"></script>
+<!-- rent script -->
+  <script type="text/javascript" src="src/app/rent/root.js"></script>
+  <script type="text/javascript" src="src/app/rent/directive.js"></script>
+  <script type="text/javascript" src="src/app/rent/factory.js"></script>
+    <!-- details rent script -->
+    <script type="text/javascript" src="src/app/rent/rent-details/directive.js"></script>
+    <script type="text/javascript" src="src/app/rent/rent-details/root.js"></script>
+<!-- sale script -->
+  <script type="text/javascript" src="src/app/sale/root.js"></script>
+  <script type="text/javascript" src="src/app/sale/directive.js"></script>
+  <script type="text/javascript" src="src/app/sale/factory.js"></script>
+    <!-- details sale script -->
+    <script type="text/javascript" src="src/app/sale/sale-details/directive.js"></script>
+    <script type="text/javascript" src="src/app/sale/sale-details/root.js"></script>
 
 
-
+  <script type="text/javascript" src="src/app/select/select.js"></script>
   <script type="text/javascript" src="src/common/directives/version.js"></script>
   <script type="text/javascript" src="src/common/interceptors/httpInterceptor.js"></script>
   <script type="text/javascript" src="src/common/services/dataService.js"></script>

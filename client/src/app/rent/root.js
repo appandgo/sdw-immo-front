@@ -3,16 +3,16 @@
 
     function config($stateProvider) {
         $stateProvider
-        .state('root.users',{
-            url: '/details-annonce',
+        .state('root.rent',{
+            url: '/rent',
             views: {
                 '@': {
-                    template: '<list-users></list-users>',
+                    template: '<rent-directive></rent-directive>',
                 }
             }
         });
     }
 
-    angular.module('app.routes.users', ['app.directives.users'])
+    angular.module('app.routes.rent', ['app.directives.rent'])
     .config(config);
 })();
