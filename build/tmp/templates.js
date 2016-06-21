@@ -132,31 +132,3 @@ module.run(["$templateCache", function($templateCache) {
     "");
 }]);
 })();
-
-(function(module) {
-try { module = angular.module("templates"); }
-catch(err) { module = angular.module("templates", []); }
-module.run(["$templateCache", function($templateCache) {
-  "use strict";
-  $templateCache.put("src/app/rent/rent.tpl.html",
-    "<div>\n" +
-    "  <div>\n" +
-    "    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam</h3>\n" +
-    "  </div>\n" +
-    "</div>");
-}]);
-})();
-
-(function(module) {
-try { module = angular.module("templates"); }
-catch(err) { module = angular.module("templates", []); }
-module.run(["$templateCache", function($templateCache) {
-  "use strict";
-  $templateCache.put("src/app/sale/sale.tpl.html",
-    "<div>\n" +
-    "  <div>\n" +
-    "    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam</h3>\n" +
-    "  </div>\n" +
-    "</div>");
-}]);
-})();

@@ -46,11 +46,20 @@
       'app.services.rent',
       'app.directives.rent',
       'app.routes.rent',
+        // details rent module
+        'app.directives.sale-details',
+        'app.routes.sale-details',
       // sale module
       'app.services.sale',
       'app.directives.sale',
       'app.routes.sale',
-
+        // details sale module
+        'app.directives.rent-details',
+        'app.routes.rent-details',
+      // search filters module
+      'filters',
+      'selectFilters',
+      
       'getting-started',
       'common.header',
       'common.footer',

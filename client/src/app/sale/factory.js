@@ -3,12 +3,13 @@
 
     function saleService($http,$log,API){
         var service = {};
-        service.users = [];
-        //var key = 'd07241f7f943c6861fa0a520b52cc049';
-        service.getData = function () {
-            alert('salut');
+        service.sales = [];
+            
+        getData = function () {
+            services = $http.get(API+'/sales', config).then(successCallback, errorCallback);
+            console.log(services);
         };
-        return service;
+        return services;
     }
 
 angular.module('app.services.sale', [])

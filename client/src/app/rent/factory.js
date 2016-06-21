@@ -3,12 +3,13 @@
 
     function rentService($http,$log,API){
         var service = {};
-        service.users = [];
+        service.rents = [];
         //var key = 'd07241f7f943c6861fa0a520b52cc049';
-        service.getData = function () {
-            alert('salut');
+        getData = function () {
+            services = $http.get(API+'/rents', config).then(successCallback, errorCallback);
+            console.log(services);
         };
-        return service;
+        return services;
     }
 
 angular.module('app.services.rent', [])

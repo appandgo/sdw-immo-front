@@ -1,11 +1,11 @@
 (function() {
     'use strict';
 
-    function rentDirective() {
+    function detailsSaleDirective() {
         return {
             restrict: 'EA',
             replace: true,
-            templateUrl: './src/app/rent/rent.html',
+            templateUrl: './src/app/sale/sale-details/sale-details.html',
             scope: {},
             controllerAs: 'vm',
             bindToController: true,
@@ -19,7 +19,7 @@
         };
     }
 
-angular.module('app.directives.rent', ['app.services.rent'])
-    .directive('rentDirective', rentDirective); 
+angular.module('app.directives.sale-details', ['app.services.sale'])
+    .directive('detailsSaleDirective', detailsSaleDirective); 
 
 })();
