@@ -10,9 +10,8 @@
             controllerAs: 'vm',
             bindToController: true,
 
-            controller: function($log, rentService, data) {
-              rentService.getData();
-            
+            controller: function($log, rentService) {
+                rentService.getData();
             },
             link: function(scope, elm, attrs){
             }

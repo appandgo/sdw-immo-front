@@ -12,7 +12,6 @@
 
             controller: function($log, rentService, data) {
               rentService.getData();
-            
             },
             link: function(scope, elm, attrs){
             }

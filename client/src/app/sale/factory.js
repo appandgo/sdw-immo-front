@@ -1,17 +1,26 @@
-(function(){
+(function() {
     'use strict';
 
     function saleService($http,$log,API){
+
         var service = {};
-        service.sales = [];
-            
-        getData = function () {
-            services = $http.get(API+'/sales', config).then(successCallback, errorCallback);
-            console.log(services);
+        service.sale = [];
+        
+        service.getData = function() {
+
+            return $http.get(API.URL+'sales')
+            .success(function(data) {
+                console.log(data);
+                service.sale = data;
+            })
+            .error(function() {
+                console.log('erreur');
+            });
         };
-        return services;
+        return service;
     }
 
 angular.module('app.services.sale', [])
     .factory('saleService', saleService);
 })()
+

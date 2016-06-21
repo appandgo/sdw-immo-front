@@ -1,17 +1,26 @@
-(function(){
-    'use strict'
-
+(function() {
+    'use strict';
+ 
     function rentService($http,$log,API){
+
         var service = {};
-        service.rents = [];
-        //var key = 'd07241f7f943c6861fa0a520b52cc049';
-        getData = function () {
-            services = $http.get(API+'/rents', config).then(successCallback, errorCallback);
-            console.log(services);
+        service.rent = [];
+        
+        service.getData = function() {
+
+            return $http.get(API.URL+'rents')
+            .success(function(data) {
+                console.log(data);
+                service.rent = data;
+            })
+            .error(function() {
+                console.log('erreur');
+            });
         };
-        return services;
+        return service;
     }
 
 angular.module('app.services.rent', [])
     .factory('rentService', rentService);
 })()
+

@@ -8,6 +8,7 @@
   "description": "Speed up your AngularJS development whith a great build system.",
   "license": "MIT",
   "bugs": "https://github.com/vesparny/angular-kickstart/issues",
+
   "repository": {
     "type": "git",
     "url": "git@github.com:vesparny/angular-kickstart.git"

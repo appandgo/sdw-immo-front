@@ -11,7 +11,7 @@
             bindToController: true,
 
             controller: function($log, saleService) {
-              saleService().getData();  
+                saleService.getData();  
             },
             link: function(scope, elm, attrs){
             }

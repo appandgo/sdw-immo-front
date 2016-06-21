@@ -69,6 +69,9 @@
       'common.interceptors.http',
       'templates'
     ])
+    .constant("API", {
+      "URL":"https://sdw-immo-backend.herokuapp.com/",
+    })
     .config(config)
     .run(run)
     .controller('MainCtrl', MainCtrl)
