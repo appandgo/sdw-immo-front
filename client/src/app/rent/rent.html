@@ -1,8 +1,11 @@
 <div>
   <div>
   <div class="col s12 m3" data-ng-repeat="rent in vm.rents">
-   <a href ui-sref="root.detailsRent({id:rent._id})"><span>{{rent.title}}</span></a>
+   <a href ui-sref="root.detailsRent({id:rent._id})">
+   	<span>{{rent.title}} | </span>
+   	<span>{{rent.address.building}} {{rent.address.street}} {{rent.address.zipcode}} {{rent.address.city}} {{rent.address.country}}</span>
+   	<img ng-src="{{rent.images[0].image}}">
+   </a>
   </div>
-
   </div>
 </div>

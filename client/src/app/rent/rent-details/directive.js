@@ -12,10 +12,11 @@
 
             controller: function($log, rentService, $stateParams) {
               var vm = this;
+              vm.rent={};
                 rentService.getOneData($stateParams.id)
                 .then(function(data) {
                     console.log(data);
-                    vm.rent = data;
+                    vm.rent = data.data;
                 });
             },
             link: function(scope, elm, attrs){

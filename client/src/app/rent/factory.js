@@ -21,7 +21,7 @@
         service.getOneData = function(ID) {
             return $http.get(API.URL+'rents/'+ID)
             .success(function(data) {
-                console.log(data);
+                //console.log(data);
                 service.rent = data;
             })
             .error(function() {
