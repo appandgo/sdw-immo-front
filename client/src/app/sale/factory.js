@@ -7,7 +7,7 @@
         service.sale = [];
         
         service.getData = function() {
-
+            
             return $http.get(API.URL+'sales')
             .success(function(data) {
                 console.log(data);
