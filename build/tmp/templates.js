@@ -23,10 +23,10 @@ module.run(["$templateCache", function($templateCache) {
     "  <ul>\n" +
     "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.home\">{{ 'home' | uppercase }}</a>\n" +
     "    </li>\n" +
-    "    <li ui-sref-active=\"pure-menu-selected\"><a>Acheter</a>\n" +
+    "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.sale\">Acheter</a>\n" +
     "    </li>														\n" +
     "    													<!-- Gérer achat / location directement ici -->\n" +
-    "    <li ui-sref-active=\"pure-menu-selected\"><a>Louer</a>\n" +
+    "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.rent\">Louer</a>\n" +
     "    </li>\n" +
     "    <li ui-sref-active=\"pure-menu-selected\"><a href ui-sref=\"root.login\">{{ 'login' | uppercase }}</a>\n" +
     "    </li>\n" +

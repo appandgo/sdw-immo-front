@@ -1,7 +1,7 @@
 <div>
   <div>
   <div class="col s12 m3" data-ng-repeat="sale in vm.sales">
-  	<span>{{sale.title}}</span>
+  	<a href ui-sref="root.detailsSale({id:sale._id})"><span>{{sale.title}}</span></a>
   </div>
    </div>
 </div>

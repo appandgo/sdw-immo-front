@@ -2,7 +2,7 @@
     'use strict';
 
     function saleService($http,$log,API){
-
+        
         var service = {};
         service.sale = [];
         
