@@ -17,6 +17,17 @@
                 console.log('erreur');
             });
         };
+
+        service.getOneData = function(ID) {
+            return $http.get(API.URL+'sales/'+ID)
+            .success(function(data) {
+                console.log(data);
+                service.sale = data;
+            })
+            .error(function() {
+                console.log('erreur');
+            }); 
+        }
         return service;
     }
 
