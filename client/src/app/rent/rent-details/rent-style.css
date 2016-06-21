@@ -10,5 +10,11 @@
 
 
 .details-annonce .details .table-content{
-	background-color: #ea9631;
+	background-color: #eeac57;
 }
+
+.details-annonce .similar-annonce .buttom{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
